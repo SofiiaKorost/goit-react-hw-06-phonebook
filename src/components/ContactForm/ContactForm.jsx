@@ -21,9 +21,9 @@ import { Button } from 'components/ContactItem/ContactItem.styled';
 const schema = yup.object().shape({
   name: yup.string().required('This field is required'),
     number: yup
-        .string()
-        //.phone(null, true, 'Enter your phone number in the format +000000000000') //перевірити
-        .required(),
+    .string()
+    //.phone(null, true, 'Enter your phone number in the format +000000000000') //перевірити
+    .required(),
 });
 
 const idInputName = nanoid();
